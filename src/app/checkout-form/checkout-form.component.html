@@ -1,0 +1,36 @@
+<div class="checkoutForm">
+    <div class="image_container">
+        <img src="assets/checkoutFormImage.jpg" alt="the image alt" >
+    </div>
+    <div class="paymentTitle" style="margin-bottom: 1em;">Payment Info</div>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" style="margin: 1em;margin: auto; width: 80%;">
+
+
+        <div style="margin:1em;">
+            <label for="fullName">Full Name: </label>
+        </div>
+        <div>
+            <input pInputText placeholder="Your Name" id="fullName" type="text" formControlName="fullName" [ngClass]="{'ng-invalid ng-dirty' : fullName.invalid && (fullName.dirty || fullName.touched) }" >
+        </div>
+        <small [style.visibility]="fullName.invalid && (fullName.dirty || fullName.touched)?'visible':'hidden'" id="username2-help" class="p-error block">Full name required</small>
+        
+
+
+        <div style="margin:1em">
+            <label for="cardNumber">Card Number: </label>
+        </div>
+        <div>
+            <span class="p-input-icon-right">
+                <i class="pi pi-credit-card"></i>
+                <input pInputText placeholder="1234 1234 1234 1234" id="cardNumber" type="text" formControlName="cardNumber" [ngClass]="{'ng-invalid ng-dirty' : cardNumber.invalid && (cardNumber.dirty || cardNumber.touched) }" >
+            </span>
+        </div>
+        <small [style.visibility]="cardNumber.invalid && (cardNumber.dirty || cardNumber.touched)?'visible':'hidden'" id="username2-help" class="p-error block">Invalid credit card </small>
+        
+        
+        <button type="submit" [disabled]="!checkoutForm.valid">Submit</button>
+
+    </form>
+</div>
+<!--width="500" height="600"-->

@@ -1,0 +1,37 @@
+.image_container{
+    margin: 35%;
+    margin-bottom: 1em;
+    padding-top: 2em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.paymentTitle{
+    text-align: center;
+    font-weight: 1000;
+    font-size: 2em;
+}
+.error{
+    color: red;
+    font-weight: bolder;
+}
+.borderError{
+    border: red;
+}
+
+input{
+    width: 90%;
+    border-radius: 10px;
+    padding: 1em;
+    
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.p-input-icon-right{
+    display: inline; /*minor ajustement to have the correct with and the icon*/
+}

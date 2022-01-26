@@ -1,0 +1,9 @@
+
+/*main CSS of the card*/
+.card{
+    border-radius: 15px ;
+    background-color: white;
+    /*align to the center*/
+    margin: auto; 
+    width: 50%;
+}
