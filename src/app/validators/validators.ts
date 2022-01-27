@@ -23,12 +23,11 @@ export function expirationDateValidator(): ValidatorFn {
     };
 }
 
-//Validation for CVV number (Only numbers and 3 or 4 lenght)
+//Validation for CVV number (Only numbers and 3 or 4 length)
 export function onlyNumbers(minDigits:number,maxDigits:number): ValidatorFn {
     return (control: AbstractControl) => {
-
         var isValid=true;
-        if(control.value.lenght<minDigits || control.value.lenght>maxDigits || isNaN(control.value)){
+        if(control.value.length<minDigits || control.value.length>maxDigits || isNaN(control.value)){
             isValid=false;
         }
 

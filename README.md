@@ -24,7 +24,7 @@ If it was part of a bigger project with views, I see 3 possible approaches to co
 
 3. If the application needed it for any reason, it is also possible to use a behavior subject in the component, which sends the data and subscriptions which receive and manage the data.
 
-In this example, I used the first approach. The component "checkout-form" is connected to the parent component "simple-card-page" which is a simple component that contain the card CSS and just print the information received in a console.log(), when the "checkout-form" component submit it successfully.
+In this development, I used the first approach. The component "checkout-form" is connected to the parent component "parent" which is a simple component that receive the data and just print the information received in a console.log() and show a success toast every time the "checkout-form" component submit the data.
 
 For internationalization in Angular, I have used the package "ngx-translate" which works really well, and I already have experience with it.
 

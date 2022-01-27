@@ -7,7 +7,8 @@
     <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" style="margin: 1em;margin: auto; width: 80%;padding-bottom: 1em;">
 
 
-        <div style="margin:1em;">
+        <!--Full name input-->
+        <div style=" margin-top:0.3em">
             <label for="fullName">Full Name: </label>
         </div>
         <div>
@@ -16,8 +17,9 @@
         <small  [style.visibility]="fullName.invalid && (fullName.dirty || fullName.touched)?'visible':'hidden'" id="fullname-help" class="p-error block">Full name required</small>
         
 
+        <!--Card Number input-->
 
-        <div>
+        <div style=" margin-top:0.3em">
             <label for="cardNumber">Card Number: </label>
         </div>
         <div>
@@ -29,8 +31,8 @@
         <small [style.visibility]="cardNumber.invalid && (cardNumber.dirty || cardNumber.touched)?'visible':'hidden'" id="cardNumber-help" class="p-error block">Invalid credit card </small>
         
 
-
-        <div class="grid" style="width: 100%;">
+        <!--Expiration Date and CVV input-->
+        <div class="grid" style="width: 100%; margin-top:0.3em">
             <div class="col">
                 <label for="expirationDate">Expiration: </label>
 
@@ -53,11 +55,14 @@
                 </div>
             </div>
         </div>
-        <div >
+
+
+        <!--ZipCode input-->
+        <div style="margin-top:0.3em">
             <label for="zipcode">ZipCode: </label>
         </div>
         <div>
-            <input pInputText placeholder="Your Name" id="zipcode" type="text" formControlName="zipcode" [ngClass]="{'ng-invalid ng-dirty' : zipcode.invalid && (zipcode.dirty || zipcode.touched) }" >
+            <input pInputText placeholder="Your Zip" id="zipcode" type="text" formControlName="zipcode" [ngClass]="{'ng-invalid ng-dirty' : zipcode.invalid && (zipcode.dirty || zipcode.touched) }" >
         </div>
         <small [style.visibility]="zipcode.invalid && (zipcode.dirty || zipcode.touched)?'visible':'hidden'" id="zipcode-help" class="p-error block">Zipcode required</small>
         

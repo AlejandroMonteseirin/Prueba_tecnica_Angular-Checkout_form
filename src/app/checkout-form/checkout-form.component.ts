@@ -27,7 +27,7 @@ export class CheckoutFormComponent implements OnInit {
   ngOnInit(): void {
     this.checkoutForm = new FormGroup({
       fullName: new FormControl('',[Validators.required]),
-      // validating the credit card we need a lenght beetween 13 an 16 and check the Luhn algorithm(validators.ts creditCardValidator)
+      // validating the credit card we need a length beetween 13 an 16 and check the Luhn algorithm(validators.ts creditCardValidator)
       cardNumber: new FormControl('',[creditCardValidator()]), 
       //expiration date must check that the card is not expired and that the month is less than 12
       expirationDate: new FormControl('',[Validators.required,expirationDateValidator()]),
