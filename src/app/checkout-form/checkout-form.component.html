@@ -13,7 +13,7 @@
         <div>
             <input pInputText placeholder="Your Name" id="fullName" type="text" formControlName="fullName" [ngClass]="{'ng-invalid ng-dirty' : fullName.invalid && (fullName.dirty || fullName.touched) }" >
         </div>
-        <small [style.visibility]="fullName.invalid && (fullName.dirty || fullName.touched)?'visible':'hidden'" id="fullname-help" class="p-error block">Full name required</small>
+        <small  [style.visibility]="fullName.invalid && (fullName.dirty || fullName.touched)?'visible':'hidden'" id="fullname-help" class="p-error block">Full name required</small>
         
 
 
@@ -48,7 +48,7 @@
                         <i class="pi pi-info-circle" title="Your 3-4 digit code in the back of your card"></i>
                         <input pInputText placeholder="&#9679;&#9679;&#9679;" maxlength="4" id="cvv" type="password" formControlName="cvv" [ngClass]="{'ng-invalid ng-dirty' : cvv.invalid && (cvv.dirty || cvv.touched) }" >
                     </span>
-                    <small [style.visibility]="cvv.invalid && (cvv.dirty || cvv.touched)?'visible':'hidden'" id="expiration-help" class="p-error block">Invalid expiration date </small>
+                    <small [style.visibility]="cvv.invalid && (cvv.dirty || cvv.touched)?'visible':'hidden'" id="cvv-help" class="p-error block">Invalid expiration date </small>
 
                 </div>
             </div>
@@ -59,7 +59,7 @@
         <div>
             <input pInputText placeholder="Your Name" id="zipcode" type="text" formControlName="zipcode" [ngClass]="{'ng-invalid ng-dirty' : zipcode.invalid && (zipcode.dirty || zipcode.touched) }" >
         </div>
-        <small [style.visibility]="fullName.invalid && (fullName.dirty || fullName.touched)?'visible':'hidden'" id="fullname-help" class="p-error block">Full name required</small>
+        <small [style.visibility]="fullName.invalid && (fullName.dirty || fullName.touched)?'visible':'hidden'" id="zipcode-help" class="p-error block">Full name required</small>
         
         <div style="margin-top: 1em;">
             <button pButton class="submitButton" [disabled]="!checkoutForm.valid" type="submit" label="Confirm Payment" icon="pi pi-check" iconPos="left"></button>   

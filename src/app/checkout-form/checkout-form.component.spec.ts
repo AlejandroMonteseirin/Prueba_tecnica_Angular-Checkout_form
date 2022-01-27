@@ -22,4 +22,13 @@ describe('CheckoutFormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it(`None of the error messages are visibles in the start`, () => {
+    const fixture = TestBed.createComponent(CheckoutFormComponent);
+    expect(fixture.debugElement.nativeElement.querySelector('#fullname-help').hasAttribute('hidden') &&
+    fixture.debugElement.nativeElement.querySelector('#cardNumber-help').hasAttribute('hidden') &&
+    fixture.debugElement.nativeElement.querySelector('#expiration-help').hasAttribute('hidden') &&
+    fixture.debugElement.nativeElement.querySelector('#cvv-help').hasAttribute('hidden') &&
+    fixture.debugElement.nativeElement.querySelector('#zipcode-help').hasAttribute('hidden')
+    ).toBeTrue();
+  });
 });
