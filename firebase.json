@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist\\alejandro-monteseirin-checkout-form",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
