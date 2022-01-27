@@ -14,6 +14,8 @@ At the end of the project readme, include a brief explanation of the project's a
 
 ### Question response:
 
+The project architecture is the main component "checkout-form.component", its parent component "parent.component" which only receive the data and print it in the console, and "simple-card-page.component" which is a simple CSS component used to make the 'card' style.
+
 If it was part of a bigger project with views, I see 3 possible approaches to connect the independent and reusable component "checkout-form":
 
 1. Connecting the component to its parents and manage the data in the parent. The checkout-form component could be connected in any place using @Input @Output annotations to send the data to the parent components.
