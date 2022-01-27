@@ -9,12 +9,17 @@ import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
 import {  ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {InputTextModule} from 'primeng/inputtext';
+import {InputMaskModule} from 'primeng/inputmask';
+import {PasswordModule} from 'primeng/password';
+import {ButtonModule} from 'primeng/button';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SimpleCardPageComponent,
-    CheckoutFormComponent
+    CheckoutFormComponent,
+    ParentComponent
     
   ],
   imports: [
@@ -22,7 +27,10 @@ import {InputTextModule} from 'primeng/inputtext';
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,// animations
-    InputTextModule  //ngPrime input text 
+    InputTextModule,  //ngPrime input text 
+    InputMaskModule,  //ngPrime mask validation (MM/YY in credit card)
+    PasswordModule, //ngPrime CVV input
+    ButtonModule //ngPrime buttons
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,18 @@
 
-/*main CSS of the card*/
-.card{
-    border-radius: 15px ;
+/*main CSS of the card, only enabled on big screens*/
+
+@media only screen and (min-width: 600px) {
+    .card {
+        
+            border-radius: 15px ;
+            /*align to the center*/
+            margin: auto; 
+            width: 50%;
+            margin-bottom: 5em;
+            margin-top: 5em;
+        
+    }
+  }
+  .whiteBackground{
     background-color: white;
-    /*align to the center*/
-    margin: auto; 
-    width: 50%;
-}
+  }

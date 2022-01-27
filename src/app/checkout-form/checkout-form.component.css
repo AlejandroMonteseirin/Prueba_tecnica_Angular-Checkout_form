@@ -1,5 +1,6 @@
 .image_container{
-    margin: 35%;
+    margin-left: 35%;
+    margin-right: 35%;
     margin-bottom: 1em;
     padding-top: 2em;
 }
@@ -27,6 +28,7 @@ input{
     
 }
 
+
 label{
     font-weight: bold;
     font-size: 1.3em;
@@ -34,4 +36,19 @@ label{
 
 .p-input-icon-right{
     display: inline; /*minor ajustement to have the correct with and the icon*/
+}
+.submitButton{
+    width: 100%;
+    background-color: #6B38DF;
+    border-color: #6B38DF ;
+}
+.submitButton:hover{
+    width: 100%;
+    background-color: #6525fa;
+    border-color: #6525fa ;
+}
+.submitButton:active{
+    width: 100%;
+    background-color: #401a97;
+    border-color: #401a97 ;
 }

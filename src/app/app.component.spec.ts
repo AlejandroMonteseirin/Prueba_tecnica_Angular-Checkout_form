@@ -26,10 +26,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('AlejandroMonteseirin_checkout_form');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('AlejandroMonteseirin_checkout_form app is running!');
-  });
 });
