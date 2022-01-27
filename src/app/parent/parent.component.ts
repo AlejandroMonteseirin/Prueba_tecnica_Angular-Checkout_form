@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MessageService} from 'primeng/api';
 
 @Component({
   selector: 'app-parent',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
   }
@@ -15,5 +16,7 @@ export class ParentComponent implements OnInit {
   newCreditCardSubmited($event:any){
     console.log("Data received:")
     console.log($event);
+    this.messageService.add({severity:'success', summary: 'Success', detail: 'Data succesfully submited!'});
+
   }
 }

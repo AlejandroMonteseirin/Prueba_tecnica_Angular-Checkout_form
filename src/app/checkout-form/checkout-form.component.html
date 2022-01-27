@@ -32,23 +32,27 @@
 
         <div class="grid" style="width: 100%;">
             <div class="col">
+                <label for="expirationDate">Expiration: </label>
+
                 <div style="margin: 0.1em;">
-                    <label for="expirationDate">Expiration: </label>
                     <p-inputMask styleClass="inputClass" formControlName="expirationDate" mask="99/99" placeholder="MM/YY" [ngClass]="{'ng-invalid ng-dirty' : expirationDate.invalid && (expirationDate.dirty || expirationDate.touched) }"></p-inputMask>
                     <small [style.visibility]="expirationDate.invalid && (expirationDate.dirty || expirationDate.touched)?'visible':'hidden'" id="expiration-help" class="p-error block">Invalid expiration date </small>
 
                 </div>
             </div>
             <div class="col">
+                <label for="cvv">CVV: </label>
+
                 <div style="margin: 0.1em;">
-                    <label for="cvv">CVV: </label>
-                    <input pInputText placeholder="&#9679;&#9679;&#9679;" maxlength="4" id="cvv" type="password" formControlName="cvv" [ngClass]="{'ng-invalid ng-dirty' : cvv.invalid && (cvv.dirty || cvv.touched) }" >
+                    <span class="p-input-icon-right">
+                        <i class="pi pi-info-circle" title="Your 3-4 digit code in the back of your card"></i>
+                        <input pInputText placeholder="&#9679;&#9679;&#9679;" maxlength="4" id="cvv" type="password" formControlName="cvv" [ngClass]="{'ng-invalid ng-dirty' : cvv.invalid && (cvv.dirty || cvv.touched) }" >
+                    </span>
                     <small [style.visibility]="cvv.invalid && (cvv.dirty || cvv.touched)?'visible':'hidden'" id="expiration-help" class="p-error block">Invalid expiration date </small>
 
                 </div>
             </div>
         </div>
-
         <div >
             <label for="zipcode">ZipCode: </label>
         </div>

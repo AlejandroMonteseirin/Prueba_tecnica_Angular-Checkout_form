@@ -13,6 +13,8 @@ import {InputMaskModule} from 'primeng/inputmask';
 import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
 import { ParentComponent } from './parent/parent.component';
+import {ToastModule} from 'primeng/toast';
+import {MessageService} from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -30,9 +32,12 @@ import { ParentComponent } from './parent/parent.component';
     InputTextModule,  //ngPrime input text 
     InputMaskModule,  //ngPrime mask validation (MM/YY in credit card)
     PasswordModule, //ngPrime CVV input
-    ButtonModule //ngPrime buttons
+    ButtonModule, //ngPrime buttons
+    ToastModule //ngPrime Toasts
   ],
-  providers: [],
+  providers: [
+    MessageService // ngPrimetoasts
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
