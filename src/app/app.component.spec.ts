@@ -1,15 +1,25 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-
+import { ParentComponent } from './parent/parent.component';
+import { SimpleCardPageComponent } from './simple-card-page/simple-card-page.component';
+import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
+import {  ReactiveFormsModule } from '@angular/forms';
+import {MessageService} from 'primeng/api';
+import {ToastModule} from 'primeng/toast';
+import { InputMaskModule } from 'primeng/inputmask';
+import { InputTextModule } from 'primeng/inputtext';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,ToastModule,ReactiveFormsModule,InputMaskModule,InputTextModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,ParentComponent,SimpleCardPageComponent,
+        CheckoutFormComponent,
+      ],providers: [
+        MessageService 
       ],
     }).compileComponents();
   });

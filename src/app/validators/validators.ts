@@ -16,22 +16,23 @@ export function expirationDateValidator(): ValidatorFn {
         var actualYear = Number(new Date().getFullYear().toString().slice(-2)); //gets the two last digits
         var actualMonth = Number(new Date().getMonth())+1; //gets the month number
 
-        if(months ==NaN || years==NaN || months>12 || months==0 || years<actualYear || (years==actualYear && months<actualMonth) ){
+        if(isNaN(months) || isNaN(years) || months>12 || months==0 || years<actualYear || (years==actualYear && months<actualMonth) ){
             isValid=false
         }
-        return isValid ? null : { 'creditCardValidator': isValid };
+        return isValid ? null : { 'expirationDateValidator': isValid };
     };
 }
 
 //Validation for CVV number (Only numbers and 3 or 4 lenght)
 export function onlyNumbers(minDigits:number,maxDigits:number): ValidatorFn {
     return (control: AbstractControl) => {
-        var isValid=true;
 
-        if(control.value.lenght<minDigits || control.value.lenght>maxDigits || Number(control.value)==NaN){
-            var isValid=false;
+        var isValid=true;
+        if(control.value.lenght<minDigits || control.value.lenght>maxDigits || isNaN(control.value)){
+            isValid=false;
         }
-        return isValid ? null : { 'creditCardValidator': isValid };
+
+        return isValid ? null : { 'onlyNumbers': isValid };
     };
 }
 

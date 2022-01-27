@@ -30,3 +30,7 @@ Regarding the Tests, I choose Karma Jasmine for testing every functionality, esp
 
 ### Test results:
 ![Test results](test_results.JPG)
+
+
+### Firebase deploy
+https://angular-pruebatecnica-alex-m-p.web.app/
