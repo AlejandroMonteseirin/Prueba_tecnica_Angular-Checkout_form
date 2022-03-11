@@ -49,9 +49,13 @@ https://angular-pruebatecnica-alex-m-p.web.app/
 
 ## Feedback from NUWE: 
 Both the solution and the description of how you'd scale the component make a lot of sense.
+
 It is not necessary at the moment to complicate the structure of the project but in order to make it more re-usable and the app complexity is bigger, we should add a new service layout and probably a repository for all the state and business logic.
+
 The solution works good and I think it is intelligent to rely some parts on the 3rd party libraries, always making sure they won't compromise the project. The only thing I'd change is where you place the validators, in order to be more re-usable as I am sure they'd be used for more components and probably they should have util or infrastructure shared folder, but for the current project, it is okay.
-I'd also add some basic commands or info on the README about how to get started with the project (just some recommendations) And lastly, there are minor accessibility and styling issues that are not really important and the.
+
+I'd also add some basic commands or info on the README about how to get started with the project (just some recommendations) And lastly, there are minor accessibility and styling issues that are not really important.
+
 Finally, good project, well commented and tested (I'd advise connecting some kind of lint and Sonarqube or similar to double-check the test coverage, but the functionalities are fully covered) and if you have any doubts do not hesitate to contact us.
 
 ## Mark
