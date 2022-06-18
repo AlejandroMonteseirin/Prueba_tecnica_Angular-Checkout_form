@@ -1,4 +1,3 @@
-
 ## Abstract
 Technical Test for **Angular Senior level** , corrected by the NUWE enterprise. With a final mark of **2750/3000** and 1º Place (of 3 projects) and very good feedback and sensations about the project. (Review for Nuwe at the end of the readme)
 
@@ -39,7 +38,6 @@ Regarding the Tests, I choose Karma Jasmine for testing every functionality, esp
 
 ### Test results:
 ![Test results](test_results.JPG)
-
 
 
 
