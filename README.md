@@ -3,8 +3,7 @@ Technical Test for **Angular Senior level** , corrected by the NUWE enterprise. 
 
 
 ### Firebase deploy
-https://angular-pruebatecnica-alex-m-p.firebaseapp.com
-
+https://alex-m-p-technical-review-form.firebaseapp.com/
 
 ## Description
 In this challenge, you are asked to develop the payment gateway shown above.
