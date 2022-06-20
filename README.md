@@ -3,7 +3,7 @@ Technical Test for **Angular Senior level** , corrected by the NUWE enterprise. 
 
 
 ### Firebase deploy
-https://angular-pruebatecnica-alex-m-p.web.app/
+https://angular-pruebatecnica-alex-m-p.firebaseapp.com
 
 
 ## Description
